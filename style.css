@@ -1,0 +1,89 @@
+:root {
+    --background: #e5ece0;
+    --text: #213527;
+    --link: #557e5c;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--background);
+    color: var(--text);
+
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+main {
+    width: 500px;
+    max-width: 80%;
+    margin-left: 12%;
+    line-height: 1.7;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 0 18px;
+}
+
+p {
+    font-size: 16px;
+    margin: 0 0 12px;
+}
+
+.bio {
+    margin-top: 20px;
+}
+
+.links {
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+.email {
+    margin-top: 0;
+}
+
+a {
+    color: var(--link);
+}
+
+/* a:hover {
+    opacity: 0.7;
+} */
+
+.weird {
+    font-family: "Comic Sans MS", cursive;
+}
+
+.normal {
+    font-family: Georgia, serif;
+}
+
+.borzoi-link {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    line-height: 0;
+}
+
+.borzoi-link img {
+    width: 100px;
+    height: auto;
+    /* transition: transform 0.2s ease; */
+}
+
+/* .borzoi-link:hover img {
+    transform: rotate(-8deg) scale(1.1);
+} */
+
+@media (max-width: 600px) {
+    main {
+        margin-left: 8%;
+        max-width: 84%;
+    }
+}
