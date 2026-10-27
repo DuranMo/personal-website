@@ -64,17 +64,23 @@ a {
     font-family: Georgia, serif;
 }
 
-.borzoi-link {
+.projects-button {
     position: fixed;
-    bottom: 0px;
-    left: 0px;
-    line-height: 0;
+    bottom: 20px;
+    left: 20px;
+
+    padding: 8px 12px;
+    background: #e8dcc5;
+    border: 1px solid #213527;
+
+    color: #213527;
+    font-size: 13px;
+    line-height: 1;
+    text-decoration: none;
 }
 
-.borzoi-link img {
-    width: 100px;
-    height: auto;
-    /* transition: transform 0.2s ease; */
+.projects-button:hover {
+    background: #f3e8d4;
 }
 
 /* .borzoi-link:hover img {

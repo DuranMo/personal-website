@@ -1,0 +1,99 @@
+:root {
+    --background: #e5ece0;
+    --text: #213527;
+    --link: #557e5c;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--background);
+    background-image: url("../images/borzoi.png");
+    background-repeat: repeat;
+    background-size: 160px auto;
+
+    color: var(--text);
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.projects-box {
+    box-sizing: border-box;
+
+    width: 75vw;
+    max-width: 1200px;
+
+    margin: 60px auto;
+    padding: 45px 60px;
+
+    background: var(--background);
+    border: 1px solid var(--text);
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: normal;
+    margin: 16px 0 24px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 0 6px;
+}
+
+p {
+    font-size: 13px;
+    margin: 0 0 10px;
+}
+
+a {
+    color: var(--link);
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+    display: inline-block;
+    padding: 8px 12px;
+
+    background: #e8dcc5;
+    border: 1px solid #213527;
+
+    color: #213527;
+    font-size: 13px;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background: #f3e8d4;
+}
+
+.project {
+    margin-bottom: 35px;
+}
+
+.project:last-child {
+    margin-bottom: 0;
+}
+
+.tech {
+    font-size: 11px;
+    opacity: 0.75;
+}
+
+@media (max-width: 600px) {
+    .projects-box {
+        width: calc(100% - 24px);
+        min-height: calc(100vh - 24px);
+        margin: 12px auto;
+        padding: 24px;
+    }
+}

@@ -3,40 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>borzoi</title>
-
-    <style>
-        body {
-            margin: 0;
-            min-height: 100vh;
-
-            background-image: url("../images/borzoi.png");
-            background-repeat: repeat;
-            background-size: 200px auto;
-
-                .back-link {
-                position: fixed;
-                bottom: 20px;
-                left: 20px;
-
-                background-color: #e9e0c6;
-                color: #413428;
-
-                padding: 6px 12px;
-                border: 1px solid #3d3227;
-
-                font-family: "Lucida Console", "Courier New", monospace;
-                font-size: 14px;
-                text-decoration: none;
-            }
-
-            .back-link:hover {
-                background-color: #e4d4aa;
-            }
-        }
-    </style>
+    <title>Projects | Duran Pasha</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href=".." class="back-link">back</a>
+    <main class="projects-box">
+        <a href="../" class="back-button">back</a>
+
+        <h1>projects</h1>
+
+        <section class="project">
+            <h2>
+                <a href="https://github.com/DuranMo/ikealternative"
+                   target="_blank" rel="noopener noreferrer">
+                    ikealternative
+                </a>
+            </h2>
+
+            <p class="tech">python, fastapi, react, typescript, websockets</p>
+
+            <p>
+                A full-stack smart home dashboard for IKEA lights,
+                featuring room controls, custom scenes, scheduling,
+                and real-time device synchronization.
+            </p>
+        </section>
+
+        <section class="project">
+            <h2>
+                <a href="https://pixels.rice.edu/"
+                target="_blank"
+                rel="noopener noreferrer">
+                    vr fan control sdk — EXP lab
+                </a>
+            </h2>
+
+            <p class="tech">c#, unity, esp32, udp, networking</p>
+
+            <p>
+                A networked SDK for controlling physical fans in
+                immersive VR environments, connecting Unity clients,
+                a host computer, and embedded hardware.
+            </p>
+        </section>
+    </main>
 </body>
 </html>
